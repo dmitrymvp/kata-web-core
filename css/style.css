@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+    font-family: 'TT Lakes', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Иконки */
+
+.round {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff3e79;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.round--pink-full {
+    background-color: #ff3e79;
+}
+
+/* Разделитель */
+
+.divider {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+}
+
+/* Гамбургер */
+.hamburger {
+    position: relative;
+    width: 18px;
+    height: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.hamburger span {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.hamburger span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.hamburger span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+
+/* 320px */
+.header {
+    min-width: 320px;
+    height: 88px;
+    background-color: #fff;
+    padding: 18px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    background-color: #f8f8f8;
+    padding: 25px 0;
+}
+
+.main__title {
+    margin-left: 16px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+}
+
+.navigation__list {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 14px;
+    overflow: scroll;
+    list-style: none;
+}
+
+.navigation__item {
+    display: block;
+    height: 40px;
+    margin-right: 3px;
+    padding: 8px 16px
+}
+
+.navigation__item a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7e7e82;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: -0.2px;
+
+}
+
+.navigation__item--active {
+    border: solid 2px #b8ffec;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.main__description {
+    margin-top: 26px;
+    padding: 0 16px;
+}
+
+.main__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+}
+
+.main__read-more {
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+}
+
+.main__photo {
+    margin-top: 15px;
+    min-width: 320px;
+
+}
+
+.main__photo img {
+    width: 100%;
+}
