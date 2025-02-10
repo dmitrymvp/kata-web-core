@@ -1,1 +1,1 @@
-https://dmitrymvp.github.io/project-web-core/
+https://dmitrymvp.github.io
